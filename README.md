@@ -1,6 +1,6 @@
 # Secure-AWS-HTTPS-Server
 
-This project sets up a secure and scalable web server environment using AWS services. It leverages **EC2** for hosting, an **Application Load Balancer (ALB)** for **HTTPS termination, AWS Certificate Manager (ACM) for SSL/TLS certificates, and Route 53 for DNS management**. 
+This project sets up a secure and scalable web server environment using AWS services. In the **AWS VPC** there will be **two public** and **two private subnets** on **two different availiabilty zones.** It leverages **EC2** on a private subnet for secure hosting, an **Application Load Balancer (ALB)** that will redirect HTTP traffic for **HTTPS termination** to the **EC2 Instance**, **AWS Certificate Manager (ACM)** for **SSL/TLS certificates**, and **Route 53 for DNS management**. The **EC2 Instance** will be able to access the Internet through a **NAT Gateway**.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/289b79a7-d2c8-4d63-9cac-97062267c1b8" alt="Centered Image" >
