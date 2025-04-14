@@ -6,7 +6,7 @@ This project sets up a secure and scalable web server environment using AWS serv
   <img src="https://github.com/user-attachments/assets/289b79a7-d2c8-4d63-9cac-97062267c1b8" alt="Centered Image" >
 </p>
 
-# Stage One
+## Stage One
 
 First we are going to create the infrastructure of this project starting with the VPC. Then we will move on assigning endpoints for the EC2 instance and then the instance itself.
 
@@ -39,6 +39,11 @@ First we are going to create the infrastructure of this project starting with th
 - Next run **sudo systemctl start nginx** and **sudo systemctl enable nginx**
 - Then **cd /usr/share/nginx/html** and **sudo mv index.html index.backup.html**
 - Finaly **sudo nano index.html** and then write your HTML
+
+## Stage Two
+
+Now that we have created most of our needed infrastructure we will now be creating our ALB and redirecting HTTPS traffic to the private subnet. After that we will be obtaining our SSL/TLS certificates and using Route 53 for DNS managment.
+
 - Next move into the [Load Balancer Console](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LoadBalancers:)
 - Click **Create Load Balancer** and **Application Load Balancer**
 - Make sure its Internet-Facing and for VPC click the one we created
