@@ -1,6 +1,6 @@
 # Secure-AWS-HTTPS-Server
 
-This project sets up a secure and scalable web server environment using AWS services. It leverages EC2 for hosting, an Application Load Balancer (ALB) for HTTPS termination, AWS Certificate Manager (ACM) for SSL/TLS certificates, and Route 53 for DNS management. 
+This project sets up a secure and scalable web server environment using AWS services. It leverages **EC2** for hosting, an **Application Load Balancer (ALB)** for **HTTPS termination, AWS Certificate Manager (ACM) for SSL/TLS certificates, and Route 53 for DNS management**. 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/289b79a7-d2c8-4d63-9cac-97062267c1b8" alt="Centered Image" >
@@ -76,6 +76,9 @@ Now that we have created most of our needed infrastructure we will now be creati
 - Click **Alias** and then Route traffic to Alias to Application and Classic Load Balancer
 - Click the corresponding region and then the ALB we created and then Create Record
 - Now search your domain the verify that your browser is routing correctly with HTTPS
+
+<br>
+
 ![image](https://github.com/user-attachments/assets/b3b1b739-758c-40e6-a730-f381a85d9a35)
 
 
